@@ -69,8 +69,6 @@ line_highlights: 13-15
 
 --- /code ---
 
---- /task ---
-
 Add a `nav-items` class attribute to the `<div>` containing the navbar links. 
 
 --- code ---
@@ -94,11 +92,7 @@ line_highlights: 12
 
 --- /code ---
 
---- /task ---
-
 ### Style the whole navbar
-
---- task ---
 
 Open the `style.css` file and a `nav` element selector.
 
