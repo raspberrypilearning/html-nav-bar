@@ -102,7 +102,7 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 36
-line_highlights: 44
+line_highlights:
 ---
 /* Nav bar */
 nav {
