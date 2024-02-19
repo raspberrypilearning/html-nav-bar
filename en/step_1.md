@@ -1,59 +1,231 @@
-## Introduction
+### Add the HTML to show the navbar
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+The navbar is placed in <nav> tags in the webpage header.
 
-### What you will make
+Find the <header> and </header> tags.
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+Add the <nav> tags.
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 10
+line_highlights: 11, 13
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+    <header>
+      <nav>
+        
+      </nav>
+    </header>
 
---- /collapse ---
+--- /code ---
 
---- collapse ---
+Use a `<div>` to contain the links to the other pages. 
+
+Inside the `<nav>` tags add a new `<div>`.
+
+--- code ---
 ---
-title: Additional information for educators
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 10
+line_highlights: 12-14
 ---
 
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
+    <header>
+      <nav>
+        <div>
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
+        </div>
+      </nav>
+    </header>
 
---- /collapse ---
+--- /code ---
+
+Add `<a>` tags to create links to each page.
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 10
+line_highlights: 13-15
+---
+
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">Home</a>
+          <a href="wildlife.html">Wildlife</a>
+          <a href="climate.html">Climate</a>
+        </div>
+      </nav>
+    </header>
+
+--- /code ---
+
+--- /task ---
+
+Add a `nav-items` class attribute to the `<div>` containing the navbar links. 
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 10
+line_highlights: 12
+---
+
+    <header>
+      <nav>
+        <div class="nav-items">
+          <a href="index.html">Home</a>
+          <a href="wildlife.html">Wildlife</a>
+          <a href="climate.html">Climate</a>
+        </div>
+      </nav>
+    </header>
+
+--- /code ---
+
+--- /task ---
+
+### Style the whole navbar
+
+--- task ---
+
+Open the `style.css` file and a `nav` element selector.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 36
+line_highlights: 44
+---
+/* Nav bar */
+nav {
+  padding: 0 15px;
+  height: 60px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33658A;
+}
+
+--- /code ---
+
+Create a selector for the `nav-items` class to space out the links.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 49
+line_highlights: 50-53
+---
+/* Nav items */
+.nav-items {
+  display: flex;
+  gap: 100px;
+}
+
+--- /code ---
+
+### Style the links
+
+As well as styling the whole navbar, you can style individual links.
+
+Create another selector to style each `<a>` tag in the `nav-items` div.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 55
+line_highlights: 56-60
+---
+/* Nav bar links */
+.nav-items > a {
+  color: #55DDE0;
+  text-decoration: none;
+  transition: .4s ease-in-out;
+}
+
+--- /code ---
+
+Add a selector to style each link when you hover over it.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 62
+line_highlights: 63-65
+---
+/* Nav links hover */
+.nav-items > a:hover {
+  color: white;
+}
+
+--- /code ---
+
+### Creating an active link
+
+The index.html page will be loaded first.
+
+When that page is open, the link should stay white and not be clickable.
+
+Add a new `active` CSS class for the link to the page that is currently open.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 67
+line_highlights: 68-71
+---
+/* Nav links active */
+.nav-items .active {
+  color: white;
+  pointer-events: none;
+}
+
+--- /code ---
+
+Open `index.html`.
+
+Add the `active` class attribute to the index.html `<a>` tag.
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 10
+line_highlights: 13
+---
+
+    <header>
+      <nav>
+        <div class="nav-items">
+          <a href="index.html" class="active">Home</a>
+          <a href="wildlife.html">Wildlife</a>
+          <a href="climate.html">Climate</a>
+        </div>
+      </nav>
+    </header>
+
+--- /code ---
