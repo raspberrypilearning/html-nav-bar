@@ -1,10 +1,10 @@
 ### Add the HTML to show the navbar
 
-The navbar is placed in <nav> tags in the webpage header.
+The navbar is placed in `<nav>` tags in the webpage header.
 
-Find the <header> and </header> tags.
+Find the `<header>` and `</header>` tags.
 
-Add the <nav> tags.
+Add the `<nav>` tags.
 
 --- code ---
 ---
@@ -25,7 +25,7 @@ line_highlights: 11, 13
 
 Use a `<div>` to contain the links to the other pages. 
 
-Inside the `<nav>` tags add a new `<div>`.
+Inside the `<nav>` tags, add a new `<div>`.
 
 --- code ---
 ---
