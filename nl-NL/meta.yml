@@ -1,0 +1,10 @@
+---
+title: Maak een navigatiebalk
+hero_image: images/banner.png
+description: Maak een balk met navigatielinks
+version: 4
+listed: false
+copyedit: false
+last_tested: "2022-05-19"
+steps:
+  - title: Maak een bovenste navigatiebalk
