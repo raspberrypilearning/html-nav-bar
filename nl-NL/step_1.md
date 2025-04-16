@@ -1,10 +1,10 @@
-### Add the HTML to show the navbar
+### Voeg de HTML toe om de navigatiebalk weer te geven
 
-The navbar is placed in `<nav>` tags in the webpage header.
+De navigatiebalk wordt tussen de `<nav>`-tags in de header van de webpagina geplaatst.
 
-Find the `<header>` and `</header>` tags.
+Zoek de tags `<header>` en `</header>`.
 
-Add the `<nav>` tags.
+Voeg de `<nav>`-tags toe.
 
 ## --- code ---
 
@@ -25,9 +25,9 @@ line_highlights: 11, 13
 
 \--- /code ---
 
-Use a `<div>` to contain the links to the other pages.
+Gebruik `<div>` om de links naar de andere pagina's op te nemen.
 
-Inside the `<nav>` tags, add a new `<div>`.
+Voeg binnen de `<nav>`-tags een nieuwe `<div>` toe.
 
 ## --- code ---
 
@@ -50,7 +50,7 @@ line_highlights: 12-14
 
 \--- /code ---
 
-Add `<a>` tags to create links to each page.
+Voeg `<a>` tags toe om links naar elke pagina te maken.
 
 ## --- code ---
 
@@ -66,8 +66,8 @@ line_highlights: 13-15
   <nav>
     <div>
       <a href="index.html">Home</a>
-      <a href="wildlife.html">Wildlife</a>
-      <a href="climate.html">Climate</a>
+      <a href="wildlife.html">Wilde dieren</a>
+      <a href="climate.html">Klimaat</a>
     </div>
   </nav>
 </header>
@@ -75,7 +75,7 @@ line_highlights: 13-15
 
 \--- /code ---
 
-Add a `nav-items` class attribute to the `<div>` containing the navbar links.
+Voeg een `nav-items`-klassekenmerk toe aan de `<div>` die de navigatiebalklinks bevat.
 
 ## --- code ---
 
@@ -91,8 +91,8 @@ line_highlights: 12
   <nav>
     <div class="nav-items">
       <a href="index.html">Home</a>
-      <a href="wildlife.html">Wildlife</a>
-      <a href="climate.html">Climate</a>
+      <a href="wildlife.html">Wilde dieren</a>
+      <a href="climate.html">Klimaat</a>
     </div>
   </nav>
 </header>
@@ -100,9 +100,9 @@ line_highlights: 12
 
 \--- /code ---
 
-### Style the whole navbar
+### De hele navigatiebalk vormgeven
 
-Open the `style.css` file and a `nav` element selector.
+Open het bestand `style.css` en een `nav`-elementselector.
 
 ## --- code ---
 
@@ -113,7 +113,7 @@ line_number_start: 36
 line_highlights:
 -----------------------------------------------------
 
-/\* Nav bar \*/
+/\* Navigatiebalk \*/
 nav {
 padding: 0 15px;
 height: 60px;
@@ -126,7 +126,7 @@ background-color: #33658A;
 
 \--- /code ---
 
-Create a selector for the `nav-items` class to space out the links.
+Maak een selector voor de klasse `nav-items` om de ruimte tussen de links te verdelen.
 
 ## --- code ---
 
@@ -137,7 +137,7 @@ line_number_start: 49
 line_highlights: 50-53
 -----------------------------------------------------------
 
-/\* Nav items \*/
+/\* Navigatie-items \*/
 .nav-items {
 display: flex;
 gap: 100px;
@@ -145,11 +145,11 @@ gap: 100px;
 
 \--- /code ---
 
-### Style the links
+### De links opmaken
 
-As well as styling the whole navbar, you can style individual links.
+Je kunt niet alleen de hele navigatiebalk opmaken, maar ook afzonderlijke links.
 
-Create another selector to style each `<a>` tag in the `nav-items` div.
+Maak een andere selector om elke `<a>`-tag in de `nav-items`-div op te maken.
 
 ## --- code ---
 
@@ -160,7 +160,7 @@ line_number_start: 55
 line_highlights: 56-60
 -----------------------------------------------------------
 
-/\* Nav bar links \*/
+/\* Navigatiebalklinks \*/
 .nav-items > a {
 color: #55DDE0;
 text-decoration: none;
@@ -169,7 +169,7 @@ transition: .4s ease-in-out;
 
 \--- /code ---
 
-Add a selector to style each link when you hover over it.
+Voeg een selector toe om elke link op te maken wanneer je erover beweegt met je muis.
 
 ## --- code ---
 
@@ -180,20 +180,20 @@ line_number_start: 62
 line_highlights: 63-65
 -----------------------------------------------------------
 
-/\* Nav links hover \*/
+/\* Muis over navigatielinks \*/
 .nav-items > a:hover {
 color: white;
 }
 
 \--- /code ---
 
-### Creating an active link
+### Een actieve link maken
 
-The index.html page will be loaded first.
+De index.html pagina zal als eerste worden geladen.
 
-When that page is open, the link should stay white and not be clickable.
+Wanneer die pagina geopend is, moet de link wit blijven en niet aanklikbaar zijn.
 
-Add a new `active` CSS class for the link to the page that is currently open.
+Voeg een nieuwe `active` CSS class toe voor de link naar de pagina die momenteel geopend is.
 
 ## --- code ---
 
@@ -204,7 +204,7 @@ line_number_start: 67
 line_highlights: 68-71
 -----------------------------------------------------------
 
-/\* Nav links active \*/
+/\* Actieve navigatielinks\*/
 .nav-items .active {
 color: white;
 pointer-events: none;
@@ -214,7 +214,7 @@ pointer-events: none;
 
 Open `index.html`.
 
-Add the `active` class attribute to the index.html `<a>` tag.
+Voeg het `active` klassekenmerk toe aan de index.html `<a>`-tag.
 
 ## --- code ---
 
@@ -230,8 +230,8 @@ line_highlights: 13
   <nav>
     <div class="nav-items">
       <a href="index.html" class="active">Home</a>
-      <a href="wildlife.html">Wildlife</a>
-      <a href="climate.html">Climate</a>
+      <a href="wildlife.html">Wilde dieren</a>
+      <a href="climate.html">Klimaat</a>
     </div>
   </nav>
 </header>
