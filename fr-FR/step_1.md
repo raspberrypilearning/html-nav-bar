@@ -1,10 +1,10 @@
-### Add the HTML to show the navbar
+### Ajouter le code HTML pour afficher la barre de navigation
 
-The navbar is placed in `<nav>` tags in the webpage header.
+La barre de navigation est placée dans les balises `<nav>` de l'en-tête de la page web.
 
-Find the `<header>` and `</header>` tags.
+Trouve les balises `<header>` et `</header>`.
 
-Add the `<nav>` tags.
+Ajoute les balises `<nav>`.
 
 ## --- code ---
 
@@ -25,9 +25,9 @@ line_highlights: 11, 13
 
 \--- /code ---
 
-Use a `<div>` to contain the links to the other pages.
+Utilise un `<div>` pour contenir les liens vers les autres pages.
 
-Inside the `<nav>` tags, add a new `<div>`.
+À l'intérieur des balises `<nav>`, ajoute un nouveau `<div>`.
 
 ## --- code ---
 
@@ -50,7 +50,7 @@ line_highlights: 12-14
 
 \--- /code ---
 
-Add `<a>` tags to create links to each page.
+Ajoute des balises `<a>` pour créer des liens vers chaque page.
 
 ## --- code ---
 
@@ -65,9 +65,9 @@ line_highlights: 13-15
 <header>
   <nav>
     <div>
-      <a href="index.html">Home</a>
-      <a href="wildlife.html">Wildlife</a>
-      <a href="climate.html">Climate</a>
+      <a href="index.html">Accueil</a>
+      <a href="wildlife.html">Faune</a>
+      <a href="climate.html">Climat</a>
     </div>
   </nav>
 </header>
@@ -75,7 +75,7 @@ line_highlights: 13-15
 
 \--- /code ---
 
-Add a `nav-items` class attribute to the `<div>` containing the navbar links.
+Ajoute un attribut de classe `nav-items` au `<div>` contenant les liens de la barre de navigation.
 
 ## --- code ---
 
@@ -90,9 +90,9 @@ line_highlights: 12
 <header>
   <nav>
     <div class="nav-items">
-      <a href="index.html">Home</a>
-      <a href="wildlife.html">Wildlife</a>
-      <a href="climate.html">Climate</a>
+      <a href="index.html">Accueil</a>
+      <a href="wildlife.html">Faune</a>
+      <a href="climate.html">Climat</a>
     </div>
   </nav>
 </header>
@@ -100,9 +100,9 @@ line_highlights: 12
 
 \--- /code ---
 
-### Style the whole navbar
+### Styliser toute la barre de navigation
 
-Open the `style.css` file and a `nav` element selector.
+Ouvre le fichier `style.css` et un sélecteur d'élément `nav`.
 
 ## --- code ---
 
@@ -113,7 +113,7 @@ line_number_start: 36
 line_highlights:
 -----------------------------------------------------
 
-/\* Nav bar \*/
+/\* Barre de navigation \*/
 nav {
 padding: 0 15px;
 height: 60px;
@@ -126,7 +126,7 @@ background-color: #33658A;
 
 \--- /code ---
 
-Create a selector for the `nav-items` class to space out the links.
+Crée un sélecteur pour la classe `nav-items` afin d'espacer les liens.
 
 ## --- code ---
 
@@ -137,7 +137,7 @@ line_number_start: 49
 line_highlights: 50-53
 -----------------------------------------------------------
 
-/\* Nav items \*/
+/\* Élément de navigation \*/
 .nav-items {
 display: flex;
 gap: 100px;
@@ -145,11 +145,11 @@ gap: 100px;
 
 \--- /code ---
 
-### Style the links
+### Styliser les liens
 
-As well as styling the whole navbar, you can style individual links.
+En plus de styliser l'ensemble de la barre de navigation, tu peux styliser des liens individuels.
 
-Create another selector to style each `<a>` tag in the `nav-items` div.
+Crée un autre sélecteur pour styliser chaque balise `<a>` dans le div `nav-items`.
 
 ## --- code ---
 
@@ -160,7 +160,7 @@ line_number_start: 55
 line_highlights: 56-60
 -----------------------------------------------------------
 
-/\* Nav bar links \*/
+/\* Liens de la barre de navigation \*/
 .nav-items > a {
 color: #55DDE0;
 text-decoration: none;
@@ -169,7 +169,7 @@ transition: .4s ease-in-out;
 
 \--- /code ---
 
-Add a selector to style each link when you hover over it.
+Ajoute un sélecteur pour styliser chaque lien lorsque tu le survoles.
 
 ## --- code ---
 
@@ -180,20 +180,20 @@ line_number_start: 62
 line_highlights: 63-65
 -----------------------------------------------------------
 
-/\* Nav links hover \*/
+/\* Survol des liens de navigation \*/
 .nav-items > a:hover {
 color: white;
 }
 
 \--- /code ---
 
-### Creating an active link
+### Créer un lien actif
 
-The index.html page will be loaded first.
+La page index.html sera chargée en premier.
 
-When that page is open, the link should stay white and not be clickable.
+Lorsque cette page est ouverte, le lien doit rester blanc et ne pas être cliquable.
 
-Add a new `active` CSS class for the link to the page that is currently open.
+Ajoute une nouvelle classe CSS `active` pour le lien vers la page actuellement ouverte.
 
 ## --- code ---
 
@@ -204,7 +204,7 @@ line_number_start: 67
 line_highlights: 68-71
 -----------------------------------------------------------
 
-/\* Nav links active \*/
+/\* Liens actifs de navigation \*/
 .nav-items .active {
 color: white;
 pointer-events: none;
@@ -212,9 +212,9 @@ pointer-events: none;
 
 \--- /code ---
 
-Open `index.html`.
+Ouvre `index.html`.
 
-Add the `active` class attribute to the index.html `<a>` tag.
+Ajoute l'attribut de classe `active` à la balise `<a>` du fichier index.html.
 
 ## --- code ---
 
@@ -229,9 +229,9 @@ line_highlights: 13
 <header>
   <nav>
     <div class="nav-items">
-      <a href="index.html" class="active">Home</a>
-      <a href="wildlife.html">Wildlife</a>
-      <a href="climate.html">Climate</a>
+      <a href="index.html" class="active">Accueil</a>
+      <a href="wildlife.html">Faune</a>
+      <a href="climate.html">Climat</a>
     </div>
   </nav>
 </header>
